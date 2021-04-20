@@ -31,7 +31,7 @@ module.exports = {
       exclude: /(node_modules|bower_components)/,
       loader: 'babel',
       query: {
-        presets: ['airbnb', 'react', 'env', 'stage-0', 'stage-1'],
+        presets: ['react', 'es2015', 'stage-0'],
       },
     }],
   },

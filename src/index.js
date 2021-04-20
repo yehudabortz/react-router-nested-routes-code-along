@@ -1,8 +1,17 @@
-import React from 'react';
-import { render } from 'react-dom';
-import App from './containers/App';
+import React from "react";
+import ReactDOM from "react-dom";
 
-render(
-  <App />,
-  document.getElementById('root')
+import SimpleComponent from "./components/SimpleComponent";
+import SimplerComponent from "./components/SimplerComponent";
+
+ReactDOM.render(
+  <div>
+    <SimpleComponent />
+    <SimplerComponent
+      handleClick={(e) => {
+        console.log((e.target.innerText = "hi"));
+      }}
+    />
+  </div>,
+  document.getElementById("root")
 );
